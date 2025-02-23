@@ -1,0 +1,30 @@
+@forward './heading';
+@forward './deck-sidebar';
+@forward './total-cards-container';
+@forward './deck-edit-container';
+@forward './big-card-container';
+
+.create-deck-page {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'heading . . .'
+    'sidebar card . .';
+
+    .header {
+        grid-area: header;
+    }
+    
+    .neo-heading {
+        grid-area: heading;
+        width: fit-content;
+    }
+    
+    .deck-sidebar {
+        grid-area: sidebar;
+    }
+
+    .big-card-container {
+        grid-area: card;
+    }
+}

@@ -1,0 +1,36 @@
+.create-deck-page {
+  .deck-sidebar {
+    width: 400px;
+    margin-top: 2rem;
+
+    .neo-box {
+      height: 400px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+
+      button {
+        flex: 1;
+      }
+    }
+
+    .container-wrapper {
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .button-container {
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+
+      & > * {
+        flex: 1;
+      }
+    }
+  }
+}

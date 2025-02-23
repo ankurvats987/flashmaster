@@ -1,0 +1,43 @@
+@use "../abstract/color" as ab;
+
+#root {
+  padding: 1rem;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+*::-webkit-scrollbar {
+  width: 12px; /* Slightly thicker for a bold look */
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffcc00; /* Bright, contrasting color for the track */
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 0; /* No rounded corners for a brutalist feel */
+  border: 3px solid #ffcc00; /* Matches the track background */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Darker for hover effect */
+}
+
+.neo-box {
+  border: 4px solid black;
+  box-shadow: 6px 6px 0px black;
+  background-color: white;
+}
+
+@each $type, $values in ab.$color {
+  @each $name, $value in $values {
+    .#{$name} {
+      background-color: #{$value};
+    }
+  }
+}

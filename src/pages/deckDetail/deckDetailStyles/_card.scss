@@ -1,0 +1,27 @@
+.deck-detail-page {
+    .card {
+        overflow-y: auto;
+        font-weight: bold;
+        font-size: 1.25rem;
+        cursor: default;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        margin: 1.25rem 0;
+
+        .inner-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+    .back {
+        color: white;
+    }
+}

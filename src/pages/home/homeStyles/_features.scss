@@ -1,0 +1,28 @@
+$muted-foreground: #71717a;
+
+.home-page {
+  .features {
+    margin-top: 6rem;
+
+    .feature-box-container {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.2rem;
+
+      .feature-box {
+        padding: 1.8rem 1rem;
+        width: 350px;
+
+        h3 {
+          margin-top: 0.6rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: $muted-foreground;
+        }
+      }
+    }
+  }
+}

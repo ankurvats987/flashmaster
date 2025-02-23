@@ -1,0 +1,33 @@
+.create-deck-page {
+  .sidebar-container {
+    .total-cards-container {
+      width: 100%;
+      height: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .placeholder-text {
+        color: #999999;
+      }
+
+      .card-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border: 2px solid black;
+        padding: 1.5rem;
+        line-height: 1.25rem;
+        background-color: #dfdfdf;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+  }
+}

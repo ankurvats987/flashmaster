@@ -1,0 +1,16 @@
+@use '../abstract/index.scss' as ab;
+
+.container-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+@each $dir in ab.$directions {
+    @each $justify in ab.$justifies {
+        @each $align in ab.$alignments {
+            .flex-#{$dir}-#{$justify}-#{$align} {
+                @include ab.flexCenter($dir, $justify, $align);
+            }
+        }
+    }
+}

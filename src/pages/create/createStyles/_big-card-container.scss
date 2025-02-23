@@ -1,0 +1,67 @@
+.create-deck-page {
+    .big-card-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        width: 650px;
+
+
+        .big-card {
+            width: 100%;
+            height: 400px;
+            overflow-y: auto;
+            // position: relative;
+
+            .editable-text {
+                // position: absolute;
+                // top: 1.5rem;
+                // bottom: 1.5rem;
+                // left: 1.5rem;
+                // right: 1.5rem;
+                border: 1.5rem solid rgba(0, 0, 0, 0); // Invisible borders used for padding.
+                width: auto;
+                text-align: center;
+
+                [contentEditable="true"] {
+                    border: none;
+                    outline: none;
+                }
+
+            }
+
+            &::-webkit-scrollbar {
+                width: 12px;  // Slightly thicker for a bold look
+            }
+            
+            &::-webkit-scrollbar-track {
+                background: #ffcc00;  // Bright, contrasting color for the track
+                border-left: 3px solid black;
+                border-right: 3px solid black;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background: black;
+                border-radius: 0; // No rounded corners for a brutalist feel
+                border: 3px solid #ffcc00; // Matches the track background
+            }
+            
+            &::-webkit-scrollbar-thumb:hover {
+                background: #333; // Darker for hover effect
+            }
+            
+        }
+
+        .big-card.flipped {
+            color: white;
+        }
+
+        .button-container {
+            margin-top: 1rem;
+            justify-content: flex-end;
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+}

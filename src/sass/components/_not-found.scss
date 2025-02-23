@@ -1,0 +1,35 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 8px 8px 0 #000;
+  }
+
+  &__title {
+    font-size: 6rem;
+    margin: 0;
+    color: #000;
+    letter-spacing: 0.5rem;
+  }
+
+  &__message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #333;
+  }
+
+  &__button {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}

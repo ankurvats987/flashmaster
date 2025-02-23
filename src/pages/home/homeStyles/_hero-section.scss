@@ -1,0 +1,55 @@
+.home-page {
+  .hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    min-height: 350px;
+    padding: 0 1.5rem;
+
+    .container-wrapper {
+      width: 30%;
+    }
+
+    .hero-diagonal {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 400px;
+      background: repeating-linear-gradient(
+        45deg,
+        #000 0,
+        #000 4px,
+        transparent 4px,
+        transparent 8px
+      );
+    }
+
+    & h1 {
+      font-size: 3.5em;
+      line-height: 1em;
+      margin-bottom: 1rem;
+    }
+
+    & .button-container {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .home-page {
+    .hero-section {
+      .container-wrapper {
+        width: 100%;
+      }
+
+      .hero-diagonal {
+        width: 0%;
+      }
+    }
+  }
+}
