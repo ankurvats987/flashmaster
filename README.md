@@ -22,7 +22,7 @@ git clone https://github.com/ankurvats987/flashmaster.git
 2. Install dependencies:
 
 ```bash
-cd flashcard-with-react
+cd flashmaster
 npm install
 ```
 
