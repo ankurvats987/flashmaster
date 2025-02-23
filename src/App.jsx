@@ -5,7 +5,7 @@ import DeckView from "./pages/view/deck-view";
 
 import {
   Route,
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router";
@@ -15,7 +15,7 @@ import DeckDetail from "./pages/deckDetail/deck-detail";
 import Layout from "./layout/layout";
 import NotFound from "./components/not-found";
 
-const Router = createBrowserRouter(
+const Router = createHashRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
